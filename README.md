@@ -1,8 +1,6 @@
-Here is a **README.md** file for your `server-stats.sh` project, written to guide users clearly and professionally:
 
-***
 
-```markdown
+
 # Server Stats - Bash Server Performance Monitor
 
 A lightweight and easy-to-use Bash script to display an at-a-glance summary of key server performance metrics on any Linux machine.
