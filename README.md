@@ -137,7 +137,7 @@ Pull requests, bug reports, and feature suggestions are welcome!
 ## Author
 
 Anurag Patil  
-https://www.instagram.com/_i_am_anuragpatil_17/profilecard/?igsh=M2oxYTR3MHA0YW5u
+https://github.com/AnuragPatil-cloud
 
 ---
 ```
