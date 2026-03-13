@@ -126,6 +126,9 @@ Recv-Q Send-Q Local Address:Port Peer Address:Port Process
 - Access to `/var/log/auth.log` or `/var/log/secure` for failed login statistics
 
 ---
+<img width="1902" height="733" alt="Screenshot 2026-03-13 195447" src="https://github.com/user-attachments/assets/91d9774c-1b20-41be-8b34-f5b6e24ddcaa" />
+
+---
 
 ## Contributions
 
