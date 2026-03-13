@@ -122,12 +122,6 @@ Aug 25 09:22:45 myserver sshd: Failed password for root ...
 
 ---
 
-## License
-
-This project is licensed under the MIT License.
-
----
-
 ## Contributions
 
 Pull requests, bug reports, and feature suggestions are welcome!
