@@ -59,53 +59,175 @@ chmod +x server-stats.sh
 
 ```
 ========================================
-       SERVER PERFORMANCE REPORT
+       SERVER PERFORMANCE REPORT        
 ========================================
 
 >>> System Information:
-Hostname       : myserver
-OS Version     : Ubuntu 20.04.6 LTS
-Kernel         : 5.15.0-91-generic
-Uptime         : up 12 hours, 35 minutes
-Load Average   : 0.45, 0.32, 0.39
+Hostname       : ip-172-31-10-157
+OS Version     : Ubuntu 24.04.3 LTS
+Kernel         : 6.17.0-1007-aws
+Uptime         : up 2 minutes
+Load Average   :  0.02, 0.03, 0.01
 Logged in Users: 2
 
 >>> CPU Usage:
-CPU Usage      : 7.43%
+CPU Usage      : 0.00 %
 
 >>> Memory Usage:
-              total        used        free      shared  buff/cache   available
-Mem:           8G          3G          1G        200M          4G          5G
+               total        used        free      shared  buff/cache   available
+Mem:           911Mi       359Mi       298Mi       2.7Mi       411Mi       552Mi
+Swap:             0B          0B          0B
 
-Memory Used    : 3162780 / 8157516 (38.77%)
+Memory Used    : 367744 / 933328 (39.40 %)
 
 >>> Disk Usage (all mounted filesystems):
-total        100G   60G   35G  63%
+total            8.4G  4.0G  4.4G  48% -
 
-Disk Used      : 63%
+Disk Used      : 48%
 
 >>> Top 5 Processes by CPU usage:
-  PID COMMAND %CPU %MEM
- 2312 java     25.3 15.2
- 1843 postgres 10.0  1.8
- ...
+    PID COMMAND         %CPU %MEM
+    545 snapd            0.9  4.2
+    538 amazon-ssm-agen  0.8  2.3
+      1 systemd          0.6  1.4
+    122 systemd-journal  0.1  1.5
+    184 systemd-udevd    0.1  0.8
 
 >>> Top 5 Processes by Memory usage:
-  PID COMMAND %CPU %MEM
- 2312 java     25.3 15.2
- ...
+    PID COMMAND         %CPU %MEM
+    545 snapd            0.9  4.2
+    181 multipathd       0.0  2.9
+    671 unattended-upgr  0.0  2.4
+    538 amazon-ssm-agen  0.8  2.3
+    532 networkd-dispat  0.0  2.2
 
 >>> Network Statistics:
-Interface: lo     | RX: 12345      | TX: 12345
-Interface: eth0   | RX: 20485760   | TX: 12543678
+Interface: lo     | RX: 9016       | TX: 9016      
+Interface: ens5   | RX: 286132     | TX: 89027     
 
 >>> Top 10 Active TCP Connections:
-State       Recv-Q Send-Q       Local Address:Port       Peer Address:Port
-ESTAB       0      0            192.168.0.10:22         203.0.113.50:45678
-...
+Recv-Q Send-Q Local Address:Port Peer Address:Port Process
+0      0      172.31.10.157:22   13.233.177.4:48426       
 
 >>> Failed Login Attempts (last 10):
-Aug 25 09:22:45 myserver sshd: Failed password for root ...
+
+========================================
+         END OF REPORT
+========================================
+root@ip-172-31-10-157:~/server-stats# ./server-stats.sh
+========================================
+       SERVER PERFORMANCE REPORT        
+========================================
+
+>>> System Information:
+Hostname       : ip-172-31-10-157
+OS Version     : Ubuntu 24.04.3 LTS
+Kernel         : 6.17.0-1007-aws
+Uptime         : up 3 minutes
+Load Average   :  0.02, 0.03, 0.01
+Logged in Users: 2
+
+>>> CPU Usage:
+CPU Usage      : 0.00 %
+
+>>> Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           911Mi       359Mi       297Mi       2.7Mi       411Mi       552Mi
+Swap:             0B          0B          0B
+
+Memory Used    : 367996 / 933328 (39.43 %)
+
+>>> Disk Usage (all mounted filesystems):
+total            8.4G  4.0G  4.4G  48% -
+
+Disk Used      : 48%
+
+>>> Top 5 Processes by CPU usage:
+    PID COMMAND         %CPU %MEM
+    545 snapd            0.8  4.2
+    538 amazon-ssm-agen  0.8  2.3
+      1 systemd          0.6  1.4
+    122 systemd-journal  0.1  1.5
+    184 systemd-udevd    0.1  0.8
+
+>>> Top 5 Processes by Memory usage:
+    PID COMMAND         %CPU %MEM
+    545 snapd            0.8  4.2
+    181 multipathd       0.0  2.9
+    671 unattended-upgr  0.0  2.4
+    538 amazon-ssm-agen  0.8  2.3
+    532 networkd-dispat  0.0  2.2
+
+>>> Network Statistics:
+Interface: lo     | RX: 9016       | TX: 9016      
+Interface: ens5   | RX: 288682     | TX: 94997     
+
+>>> Top 10 Active TCP Connections:
+Recv-Q Send-Q Local Address:Port Peer Address:Port Process
+0      0      172.31.10.157:22   13.233.177.4:48426       
+
+>>> Failed Login Attempts (last 10):
+
+========================================
+         END OF REPORT
+========================================
+root@ip-172-31-10-157:~/server-stats# ls
+ README.md  'server-stat QNA.pdf'   server-stats-report.txt   server-stats.sh
+root@ip-172-31-10-157:~/server-stats# cat server-stat-report.txt
+cat: server-stat-report.txt: No such file or directory
+root@ip-172-31-10-157:~/server-stats# cat server-stats-report.txt
+========================================
+       SERVER PERFORMANCE REPORT        
+========================================
+
+>>> System Information:
+Hostname       : ip-172-31-10-157
+OS Version     : Ubuntu 24.04.3 LTS
+Kernel         : 6.17.0-1007-aws
+Uptime         : up 2 minutes
+Load Average   :  0.02, 0.03, 0.01
+Logged in Users: 2
+
+>>> CPU Usage:
+CPU Usage      : 0.00 %
+
+>>> Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           911Mi       359Mi       298Mi       2.7Mi       411Mi       552Mi
+Swap:             0B          0B          0B
+
+Memory Used    : 367744 / 933328 (39.40 %)
+
+>>> Disk Usage (all mounted filesystems):
+total            8.4G  4.0G  4.4G  48% -
+
+Disk Used      : 48%
+
+>>> Top 5 Processes by CPU usage:
+    PID COMMAND         %CPU %MEM
+    545 snapd            0.9  4.2
+    538 amazon-ssm-agen  0.8  2.3
+      1 systemd          0.6  1.4
+    122 systemd-journal  0.1  1.5
+    184 systemd-udevd    0.1  0.8
+
+>>> Top 5 Processes by Memory usage:
+    PID COMMAND         %CPU %MEM
+    545 snapd            0.9  4.2
+    181 multipathd       0.0  2.9
+    671 unattended-upgr  0.0  2.4
+    538 amazon-ssm-agen  0.8  2.3
+    532 networkd-dispat  0.0  2.2
+
+>>> Network Statistics:
+Interface: lo     | RX: 9016       | TX: 9016      
+Interface: ens5   | RX: 286132     | TX: 89027     
+
+>>> Top 10 Active TCP Connections:
+Recv-Q Send-Q Local Address:Port Peer Address:Port Process
+0      0      172.31.10.157:22   13.233.177.4:48426       
+
+>>> Failed Login Attempts (last 10):
 
 ========================================
          END OF REPORT
