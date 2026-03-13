@@ -25,7 +25,7 @@ A lightweight and easy-to-use Bash script to display an at-a-glance summary of k
 ### 1. Download or Clone this Repository
 
 ```
-git clone https://github.com/yourusername/server-stats.git
+git clone https://github.com/AnuragPatil-cloud/server-stats.git
 cd server-stats
 ```
 
